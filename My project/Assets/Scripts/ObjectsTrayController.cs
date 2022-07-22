@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ObjectsTrayController : MonoBehaviour
 {
@@ -14,7 +15,7 @@ public class ObjectsTrayController : MonoBehaviour
     private void Start()
     {
         //trashAnim.SetBool("inPlace", false);
-        
+
     }
 
     private void Update()
