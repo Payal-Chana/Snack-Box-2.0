@@ -6,6 +6,7 @@ using UnityEngine;
 public class TrashColliderController : MonoBehaviour
 {
     public Animator trashAnim;
+    public GameObject newPos;
     
     private void Start()
     {
@@ -18,10 +19,19 @@ public class TrashColliderController : MonoBehaviour
         {
             trashAnim.SetBool("thrown", true);
 
-            this.gameObject.SetActive(false);
-
+            //this.gameObject.SetActive(false);
+            
             //Sound for trash
             FindObjectOfType<MusicManager>().Play("Trash");
+
+            StartCoroutine("waitForAnim");
         }
+    }
+
+    IEnumerator waitForAnim()
+    {
+        yield return new WaitForSeconds(0.5f);
+        trashAnim.SetBool("thrown", false);
+        this.gameObject.transform.position = newPos.transform.position;
     }
 }
