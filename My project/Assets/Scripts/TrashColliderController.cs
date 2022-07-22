@@ -6,8 +6,7 @@ using UnityEngine;
 public class TrashColliderController : MonoBehaviour
 {
     public Animator trashAnim;
-    public GameObject Trash;
-
+    
     private void Start()
     {
         trashAnim.SetBool("thrown", false);
@@ -18,12 +17,11 @@ public class TrashColliderController : MonoBehaviour
         if (collision.gameObject.tag == "Trash")
         {
             trashAnim.SetBool("thrown", true);
-            Trash.SetActive(false);
-            
+
+            this.gameObject.SetActive(false);
+
             //Sound for trash
             FindObjectOfType<MusicManager>().Play("Trash");
         }
     }
-
-
 }
