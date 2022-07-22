@@ -254,8 +254,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1024892859}
+  - {fileID: 1795419774}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &387128488
 GameObject:
@@ -1133,7 +1134,7 @@ Transform:
   - {fileID: 1419152128}
   - {fileID: 2069109013}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &744527350
 GameObject:
@@ -1168,7 +1169,7 @@ Transform:
   - {fileID: 1321146344}
   - {fileID: 1514505341}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &905453008
 GameObject:
@@ -1202,7 +1203,7 @@ Transform:
   - {fileID: 970356573}
   - {fileID: 1955596830}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &970356572
 GameObject:
@@ -1444,7 +1445,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 697391ac6d596df47bf6061fcb8aa6fe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1660,6 +1661,7 @@ GameObject:
   - component: {fileID: 1321146347}
   - component: {fileID: 1321146346}
   - component: {fileID: 1321146345}
+  - component: {fileID: 1321146350}
   m_Layer: 0
   m_Name: Cassette 2
   m_TagString: Cassette2
@@ -1820,6 +1822,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1321146350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321146343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a4c7a3dadb2564185a09409a164984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio1: {fileID: 1419152127}
+  audio2: {fileID: 408519984}
+  audio3: {fileID: 2069109012}
+  isCollided: 0
+  CassetteSlot: {fileID: 1567971514}
+  playerCollider: {fileID: 615613171}
 --- !u!1 &1419152126
 GameObject:
   m_ObjectHideFlags: 0
@@ -1961,6 +1981,7 @@ GameObject:
   - component: {fileID: 1514505344}
   - component: {fileID: 1514505343}
   - component: {fileID: 1514505342}
+  - component: {fileID: 1514505347}
   m_Layer: 0
   m_Name: Cassette 3
   m_TagString: Cassette
@@ -2121,6 +2142,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1514505347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514505340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a4c7a3dadb2564185a09409a164984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio1: {fileID: 2069109012}
+  audio2: {fileID: 408519984}
+  audio3: {fileID: 1419152127}
+  isCollided: 0
+  CassetteSlot: {fileID: 1567971514}
+  playerCollider: {fileID: 615613171}
 --- !u!1 &1567971514
 GameObject:
   m_ObjectHideFlags: 0
@@ -2416,12 +2455,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1795419772}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.26, y: 3.55, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.2212348, y: 3.6997736, z: 0.68525565}
   m_LocalScale: {x: 0.288, y: 0.288, z: 0.288}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_Father: {fileID: 353445572}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1795419775
 BoxCollider2D:
@@ -2863,6 +2902,7 @@ GameObject:
   - component: {fileID: 2019947766}
   - component: {fileID: 2019947765}
   - component: {fileID: 2019947764}
+  - component: {fileID: 2019947770}
   m_Layer: 0
   m_Name: Cassette 1
   m_TagString: Cassette
@@ -3023,6 +3063,24 @@ Transform:
   m_Father: {fileID: 744527351}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2019947770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019947763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0a4c7a3dadb2564185a09409a164984, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audio1: {fileID: 408519984}
+  audio2: {fileID: 1419152127}
+  audio3: {fileID: 2069109012}
+  isCollided: 0
+  CassetteSlot: {fileID: 1567971514}
+  playerCollider: {fileID: 615613171}
 --- !u!1 &2069109011
 GameObject:
   m_ObjectHideFlags: 0
