@@ -1813,6 +1813,13 @@ MonoBehaviour:
     Loop: 0
     PlayOnAwake: 0
     AudioSource: {fileID: 0}
+  - Name: button
+    clip: {fileID: 8300000, guid: 711dd59baa2c4724686ebc594df9c8db, type: 3}
+    volume: 1
+    pitch: 1.84
+    Loop: 0
+    PlayOnAwake: 0
+    AudioSource: {fileID: 0}
 --- !u!1 &742908215
 GameObject:
   m_ObjectHideFlags: 0

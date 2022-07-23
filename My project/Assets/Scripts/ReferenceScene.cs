@@ -12,4 +12,22 @@ public class ReferenceScene : MonoBehaviour
         //Sound for object placed down
         FindObjectOfType<MusicManager>().Play("button");
     }
+    
+    public void Exit()
+    {
+        Application.Quit();
+        
+        
+        //Sound for object placed down
+        FindObjectOfType<MusicManager>().Play("button");
+    }
+    
+    public void Home()
+    {
+        SceneManager.LoadScene("CassettePlayer");
+        
+        
+        //Sound for object placed down
+        FindObjectOfType<MusicManager>().Play("button");
+    }
 }
