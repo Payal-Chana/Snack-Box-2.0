@@ -283,6 +283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trashAnim: {fileID: 538104450}
   newPos: {fileID: 1334232291}
+  counter: {fileID: 353445573}
 --- !u!1 &28572011
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,6 +335,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1668558899}
   collider: {fileID: 28572016}
+  counter: {fileID: 353445573}
 --- !u!114 &28572014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,6 +498,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1375995907}
   collider: {fileID: 173764199}
+  counter: {fileID: 353445573}
 --- !u!114 &173764197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -638,12 +641,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1638038666}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 496, y: 257}
-  m_SizeDelta: {x: 80, y: 80}
+  m_AnchoredPosition: {x: 879, y: 482}
+  m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &201692694
 MonoBehaviour:
@@ -922,6 +925,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 367789906}
   collider: {fileID: 283881352}
+  counter: {fileID: 353445573}
 --- !u!114 &283881350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1042,6 +1046,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 353445572}
+  - component: {fileID: 353445573}
   m_Layer: 0
   m_Name: Objects
   m_TagString: Untagged
@@ -1086,6 +1091,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &353445573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353445571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c09eda438facf2a4da817dbdf04c6acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FoundCounter: 0
+  finalNumberOfObjectsFound: 28
+  StarPanel: {fileID: 2038830641}
 --- !u!1 &367789906
 GameObject:
   m_ObjectHideFlags: 0
@@ -1866,6 +1886,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 283337294}
   collider: {fileID: 477410756}
+  counter: {fileID: 353445573}
 --- !u!114 &477410754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2131,6 +2152,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1604665954}
   collider: {fileID: 510666583}
+  counter: {fileID: 353445573}
 --- !u!114 &510666581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2577,6 +2599,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1666978226}
   collider: {fileID: 568887161}
+  counter: {fileID: 353445573}
 --- !u!114 &568887159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2846,6 +2869,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1371083300}
   collider: {fileID: 473297006}
+  counter: {fileID: 353445573}
 --- !u!114 &590047208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3332,6 +3356,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1740996064}
   collider: {fileID: 692688954}
+  counter: {fileID: 353445573}
 --- !u!114 &692688952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3511,8 +3536,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -181.16, y: 0.000030518}
-  m_SizeDelta: {x: 244.3247, y: 137.4326}
+  m_AnchoredPosition: {x: -282.6039, y: 112.99997}
+  m_SizeDelta: {x: 547.536, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &735521467
 MonoBehaviour:
@@ -3789,6 +3814,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1233425024}
   collider: {fileID: 765339228}
+  counter: {fileID: 353445573}
 --- !u!114 &765339226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4283,7 +4309,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 44}
-  m_SizeDelta: {x: 120, y: 120}
+  m_SizeDelta: {x: 180, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &894293533
 MonoBehaviour:
@@ -4808,8 +4834,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -25, y: 0.000030518}
-  m_SizeDelta: {x: 244.3247, y: 137.4326}
+  m_AnchoredPosition: {x: 2.4068604, y: 112.99997}
+  m_SizeDelta: {x: 547.536, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1001579733
 MonoBehaviour:
@@ -4882,7 +4908,6 @@ GameObject:
   - component: {fileID: 1024892856}
   - component: {fileID: 1024892860}
   - component: {fileID: 1024892861}
-  - component: {fileID: 1024892862}
   m_Layer: 0
   m_Name: Glasses
   m_TagString: Untagged
@@ -5022,7 +5047,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1024892855}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e70f06b2c2baeff45805c045f197645d, type: 3}
   m_Name: 
@@ -5031,25 +5056,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 620083758}
   collider: {fileID: 1024892857}
---- !u!114 &1024892862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1024892855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b1bc286275159940af8bf9cbff02639, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FoundCounter: 0
-  finalNumberOfObjectsFound: 1
-  StarPanel: {fileID: 2038830641}
-  Object: {fileID: 1024892855}
-  trayPosFound: 0
-  trayRightPos: {fileID: 620083758}
-  collider: {fileID: 1024892857}
+  counter: {fileID: 353445573}
 --- !u!1 &1033950730
 GameObject:
   m_ObjectHideFlags: 0
@@ -5085,8 +5092,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -58}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchoredPosition: {x: 0, y: -121}
+  m_SizeDelta: {x: 180, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1033950732
 MonoBehaviour:
@@ -5448,6 +5455,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 555776764}
   collider: {fileID: 1055995730}
+  counter: {fileID: 353445573}
 --- !u!114 &1055995728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5722,12 +5730,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1638038666}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -497, y: 256}
-  m_SizeDelta: {x: 80, y: 80}
+  m_AnchoredPosition: {x: -883, y: 481}
+  m_SizeDelta: {x: 120, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1068193955
 MonoBehaviour:
@@ -5874,6 +5882,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1037088201}
   collider: {fileID: 1084036939}
+  counter: {fileID: 353445573}
 --- !u!114 &1084036937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6145,6 +6154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trashAnim: {fileID: 538104450}
   newPos: {fileID: 1334232291}
+  counter: {fileID: 353445573}
 --- !u!1 &1163253744
 GameObject:
   m_ObjectHideFlags: 0
@@ -6196,6 +6206,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1944018574}
   collider: {fileID: 1163253749}
+  counter: {fileID: 353445573}
 --- !u!114 &1163253747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6490,6 +6501,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 969683596}
   collider: {fileID: 1187618241}
+  counter: {fileID: 353445573}
 --- !u!114 &1187618239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6761,6 +6773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trashAnim: {fileID: 538104450}
   newPos: {fileID: 1334232291}
+  counter: {fileID: 353445573}
 --- !u!1 &1233425024
 GameObject:
   m_ObjectHideFlags: 0
@@ -6944,6 +6957,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 795802318}
   collider: {fileID: 1238146850}
+  counter: {fileID: 353445573}
 --- !u!114 &1238146848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7106,6 +7120,13 @@ MonoBehaviour:
     Loop: 0
     PlayOnAwake: 0
     AudioSource: {fileID: 0}
+  - Name: button
+    clip: {fileID: 8300000, guid: 711dd59baa2c4724686ebc594df9c8db, type: 3}
+    volume: 1
+    pitch: 2.12
+    Loop: 0
+    PlayOnAwake: 0
+    AudioSource: {fileID: 0}
 --- !u!4 &1271754914
 Transform:
   m_ObjectHideFlags: 0
@@ -7155,8 +7176,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -168}
-  m_SizeDelta: {x: 120, y: 120}
+  m_AnchoredPosition: {x: 0, y: -306}
+  m_SizeDelta: {x: 180, y: 180}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1274777758
 MonoBehaviour:
@@ -7462,6 +7483,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 970356572}
   collider: {fileID: 449024913}
+  counter: {fileID: 353445573}
 --- !u!1 &1326806306
 GameObject:
   m_ObjectHideFlags: 0
@@ -7513,6 +7535,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1941182820}
   collider: {fileID: 1326806311}
+  counter: {fileID: 353445573}
 --- !u!114 &1326806309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7672,6 +7695,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trashAnim: {fileID: 538104450}
   newPos: {fileID: 0}
+  counter: {fileID: 0}
 --- !u!114 &1334232294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7765,8 +7789,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000030518, y: 197}
-  m_SizeDelta: {x: 743.8522, y: 139.4723}
+  m_AnchoredPosition: {x: 0, y: 284.8}
+  m_SizeDelta: {x: 1768.4979, y: 331.5934}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1337741672
 MonoBehaviour:
@@ -7790,11 +7814,11 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 120
+    m_FontSize: 226
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 120
+    m_MaxSize: 226
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -7861,6 +7885,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1063313126}
   collider: {fileID: 1368674215}
+  counter: {fileID: 353445573}
 --- !u!114 &1368674213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8766,6 +8791,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trashAnim: {fileID: 538104450}
   newPos: {fileID: 1334232291}
+  counter: {fileID: 353445573}
 --- !u!1 &1567971514
 GameObject:
   m_ObjectHideFlags: 0
@@ -9171,6 +9197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trashAnim: {fileID: 538104450}
   newPos: {fileID: 1334232291}
+  counter: {fileID: 353445573}
 --- !u!1 &1638038662
 GameObject:
   m_ObjectHideFlags: 0
@@ -9223,7 +9250,7 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1080, y: 1920}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -9263,9 +9290,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 2038830642}
   - {fileID: 201692693}
   - {fileID: 1068193954}
+  - {fileID: 2038830642}
   - {fileID: 1519486032}
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -9718,8 +9745,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 126, y: 0.000030518}
-  m_SizeDelta: {x: 244.3247, y: 137.4326}
+  m_AnchoredPosition: {x: 278, y: 113}
+  m_SizeDelta: {x: 547.536, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1742770267
 MonoBehaviour:
@@ -9734,7 +9761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -10022,6 +10049,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trashAnim: {fileID: 538104450}
   newPos: {fileID: 1334232291}
+  counter: {fileID: 353445573}
 --- !u!1 &1919372845
 GameObject:
   m_ObjectHideFlags: 0
@@ -10073,6 +10101,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 838657694}
   collider: {fileID: 1919372850}
+  counter: {fileID: 353445573}
 --- !u!114 &1919372848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10631,6 +10660,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 736761771}
   collider: {fileID: 1973441213}
+  counter: {fileID: 353445573}
 --- !u!114 &1973441211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10794,6 +10824,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1393672273}
   collider: {fileID: 1987857007}
+  counter: {fileID: 353445573}
 --- !u!114 &1987857005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11115,6 +11146,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1932468094}
   collider: {fileID: 2114926098}
+  counter: {fileID: 353445573}
 --- !u!1 &2038830641
 GameObject:
   m_ObjectHideFlags: 0
@@ -11148,7 +11180,7 @@ RectTransform:
   - {fileID: 1001579732}
   - {fileID: 1742770266}
   m_Father: {fileID: 1638038666}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -11168,7 +11200,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.10310992, g: 0.11320752, b: 0.10295476, a: 0.9372549}
+  m_Color: {r: 0.5405126, g: 0.5943396, b: 0.5405126, a: 0.9372549}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -11606,6 +11638,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1172527155}
   collider: {fileID: 2122100671}
+  counter: {fileID: 353445573}
 --- !u!114 &2122100669
 MonoBehaviour:
   m_ObjectHideFlags: 0

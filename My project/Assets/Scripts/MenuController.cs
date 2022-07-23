@@ -19,11 +19,13 @@ public class MenuController : MonoBehaviour
         if (gameisPaused)
         {
             Time.timeScale = 0f;
+            AudioListener.volume = 0f;
             //gameisPaused = false;
         }
         else
         {
             Time.timeScale = 1f;
+            AudioListener.volume = 1f;
             //gameisPaused = true;
         }
     }
@@ -33,30 +35,44 @@ public class MenuController : MonoBehaviour
         gameisPaused = true;
         pauseMenu.SetActive(true);
 
+        //Sound for object placed down
+        FindObjectOfType<MusicManager>().Play("button");
     }
 
     public void ButtonResume()
     {
         gameisPaused = false;
         pauseMenu.SetActive(true);
+        
+        //Sound for object placed down
+        FindObjectOfType<MusicManager>().Play("button");
     }
 
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         gameisPaused = false;
+        
+        //Sound for object placed down
+        FindObjectOfType<MusicManager>().Play("button");
     }
     
     public void Home()
     {
         SceneManager.LoadScene("CassettePlayer");
         gameisPaused = false;
+        
+        //Sound for object placed down
+        FindObjectOfType<MusicManager>().Play("button");
     }
 
     public void Exit()
     {
         Application.Quit();
         gameisPaused = false;
+        
+        //Sound for object placed down
+        FindObjectOfType<MusicManager>().Play("button");
     }
 
 

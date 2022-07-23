@@ -8,6 +8,8 @@ public class TrashColliderController : MonoBehaviour
     public Animator trashAnim;
     public GameObject newPos;
     
+    public CounterObjectsManager counter;
+    
     private void Start()
     {
         trashAnim.SetBool("thrown", false);
@@ -23,6 +25,8 @@ public class TrashColliderController : MonoBehaviour
             
             //Sound for trash
             FindObjectOfType<MusicManager>().Play("Trash");
+
+            counter.FoundCounter++;
 
             StartCoroutine("waitForAnim");
         }
