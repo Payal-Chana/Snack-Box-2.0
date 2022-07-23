@@ -399,7 +399,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1182462501}
   collider: {fileID: 217994619}
-  counter: {fileID: 1305716074}
+  counter: {fileID: 0}
 --- !u!114 &217994617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1519,7 +1519,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1305716073}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c09eda438facf2a4da817dbdf04c6acb, type: 3}
+  m_Script: {fileID: 11500000, guid: 3796368963951134689cb5bd1918b635, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   FoundCounter: 0

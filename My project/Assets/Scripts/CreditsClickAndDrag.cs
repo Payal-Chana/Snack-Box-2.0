@@ -8,7 +8,7 @@ public class CreditsClickAndDrag : MonoBehaviour
 {
     public Rigidbody2D rb;
     public bool hasBeenClicked;
-    public GameObject theCamera;
+    public GameObject theCamera, Cheyenne;
 
     public GameObject item;
     public bool goalPosFound;
@@ -16,7 +16,7 @@ public class CreditsClickAndDrag : MonoBehaviour
     public BoxCollider2D EnterKeyBC;
 
     public Text L_Text, A_Text, S1_Text, S2_Text, O_Text;
-    public GameObject EnterKey, Hint, VinylDisk/*, Halo, StringLights, Paperclip*/;
+    public GameObject EnterKey, Hint, VinylDisk, Headphones/*, Halo, StringLights, Paperclip*/;
     //public bool canMakeLasso, gotHalo, gotpaperclip, gotStringLights;
     public GameObject WifiMonitor, BlankMonitor;
 
@@ -44,19 +44,23 @@ public class CreditsClickAndDrag : MonoBehaviour
         if (gameObject.name == "L" && goalPosFound == true)
         {
             L_Text.gameObject.SetActive(true);
+            gameObject.transform.parent = Cheyenne.transform;
         }
         if (gameObject.name == "A" && goalPosFound == true)
         {
             A_Text.gameObject.SetActive(true);
+            gameObject.transform.parent = Cheyenne.transform;
         }
         if (gameObject.name == "S" && goalPosFound == true)
         {
             S1_Text.gameObject.SetActive(true);
             S2_Text.gameObject.SetActive(true);
+            gameObject.transform.parent = Cheyenne.transform;
         }
         if (gameObject.name == "O" && goalPosFound == true)
         {
             O_Text.gameObject.SetActive(true);
+            gameObject.transform.parent = Cheyenne.transform;
         }
         if (L_Text.gameObject.activeSelf == true &&
             A_Text.gameObject.activeSelf == true &&
@@ -67,7 +71,8 @@ public class CreditsClickAndDrag : MonoBehaviour
             if (gameObject.name == "Wifi" && goalPosFound == true)
             {
                 EnterKey.SetActive(true);
-                
+                gameObject.transform.parent = Cheyenne.transform;
+
             }  
         }
         /*if (gotHalo == true && gotpaperclip == true && gotStringLights == true)
@@ -152,12 +157,18 @@ public class CreditsClickAndDrag : MonoBehaviour
 
         if (gameObject.name == "Lasso" && collision.gameObject.name == "Headphone")
         {
+            
             StartCoroutine(Lasso());
         }
     }
 
     IEnumerator Lasso()
     {
+        /*if (gameObject.name == "Headphone")
+        {
+            rbheadphones = Headphones.GetComponent<Rigidbody2D>();
+            rbheadphones.bodyType = RigidbodyType2D.Dynamic;
+        }*/
         yield return new WaitForSeconds(4f);
        
         SceneManager.LoadScene("FinalScene");

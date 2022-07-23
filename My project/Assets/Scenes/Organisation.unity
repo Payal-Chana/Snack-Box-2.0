@@ -1104,7 +1104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FoundCounter: 0
-  finalNumberOfObjectsFound: 1
+  finalNumberOfObjectsFound: 28
   StarPanel: {fileID: 2038830641}
 --- !u!1 &367789906
 GameObject:
@@ -6673,7 +6673,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.5705409, y: -0.00000023841858}
+  m_Offset: {x: -0.04553795, y: -0.12353325}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6684,7 +6684,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.751006, y: 6.5227904}
+  m_Size: {x: 7.983162, y: 6.7698565}
   m_EdgeRadius: 0
 --- !u!50 &1203839833
 Rigidbody2D:
@@ -9111,7 +9111,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.5705409, y: -0.00000023841858}
+  m_Offset: {x: -0.465971, y: -0.58829165}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9122,7 +9122,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.751006, y: 6.5227904}
+  m_Size: {x: 9.272253, y: 8.819927}
   m_EdgeRadius: 0
 --- !u!50 &1634331347
 Rigidbody2D:
@@ -10885,7 +10885,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.13980436, y: -0.360034}
+  m_Offset: {x: -0.2636795, y: -0.5490718}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -10896,7 +10896,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.621558, y: 6.7688837}
+  m_Size: {x: 8.869308, y: 7.6541586}
   m_EdgeRadius: 0
 --- !u!212 &1987857008
 SpriteRenderer:
