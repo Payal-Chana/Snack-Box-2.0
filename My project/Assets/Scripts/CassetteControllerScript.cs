@@ -10,7 +10,7 @@ public class CassetteControllerScript : MonoBehaviour
     public AudioSource audio3;
     public bool isCollided;
     public GameObject CassetteSlot;
-    public BoxCollider2D playerCollider;
+    public BoxCollider2D CassetteTrayCollider;
     
     private void Update()
     {
@@ -34,7 +34,7 @@ public class CassetteControllerScript : MonoBehaviour
             isCollided = true;
             audio1.Play();
             audio1.enabled = true;
-            //StartCoroutine("waitForSecs");
+            StartCoroutine("waitForSecs");
         }
     }
 
@@ -51,6 +51,6 @@ public class CassetteControllerScript : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         
-        playerCollider.enabled = false;
+        CassetteTrayCollider.enabled = false;
     }
 }
