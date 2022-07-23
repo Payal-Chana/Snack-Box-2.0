@@ -24,5 +24,17 @@ public class CameraMovement : MonoBehaviour
         {
             theCamera.transform.position = startPos.transform.position;
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (speed >= 0.5f)
+            {
+                speed = 0;
+            }
+            else
+            {
+                speed = 1.5f;
+            }
+        }
     }
 }
