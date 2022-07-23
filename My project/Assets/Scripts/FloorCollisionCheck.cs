@@ -23,6 +23,8 @@ public class FloorCollisionCheck : MonoBehaviour
             StringLights.SetActive(false);
             Lasso.SetActive(true);
 
+            //Sound for object placed down
+            //FindObjectOfType<MusicManager>().Play("Lasso");
             
         }
     }

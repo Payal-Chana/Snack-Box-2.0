@@ -46,5 +46,6 @@ public class CassetteSound : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         SceneManager.LoadScene("Organisation");
+        
     }
 }

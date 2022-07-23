@@ -6,37 +6,32 @@ using UnityEngine;
 
 public class ClickandDrag : MonoBehaviour
 {
-    private Vector3 mOffset;
-    private float mZCoord;
+    private Vector3 mouseOffset;
+    private float mouseZCoord;
 
     private void OnMouseDown()
     {
         //Sound for object interactable
         FindObjectOfType<MusicManager>().Play("ObjectInteractable");
-        /*if (gameObject.name != "Enter")
-        {*/
-            mZCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
+        
+        mouseZCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
 
-            //mOffset = gameObject world pos - OnMouseDown world pos
-            mOffset = gameObject.transform.position - GetMouseWorldPos();
-        //}
+        //mOffset = gameObject world pos - OnMouseDown world pos
+        mouseOffset = gameObject.transform.position - MouseWorldPosition();
     }
 
     private void OnMouseDrag()
     {
-        /*if (gameObject.name != "Enter")
-        {*/
-            transform.position = GetMouseWorldPos() + mOffset;
-        //}
+        transform.position = MouseWorldPosition() + mouseOffset;
     }
 
-    private Vector3 GetMouseWorldPos()
+    private Vector3 MouseWorldPosition()
     {
         //pixel coordinates (x,y)
         Vector3 mousePoint = Input.mousePosition;
 
         //z coordinate of game object of screen
-        mousePoint.z = mZCoord;
+        mousePoint.z = mouseZCoord;
 
         return Camera.main.ScreenToWorldPoint(mousePoint);
 

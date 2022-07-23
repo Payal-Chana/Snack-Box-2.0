@@ -1062,7 +1062,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353445571}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.0387654, y: -0.14977354, z: -0.68525565}
+  m_LocalPosition: {x: -3.0387654, y: -0.14977354, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1024892859}
@@ -3291,7 +3291,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640283352}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.0387654, y: -0.14977354, z: -0.68525565}
+  m_LocalPosition: {x: -3.0387654, y: -0.14977354, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 538104447}
@@ -3492,7 +3492,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 722355752}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.9771733, y: -3.384671, z: -2.9187372}
+  m_LocalPosition: {x: -5.9771733, y: -3.384671, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 408519985}
@@ -3752,7 +3752,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 744527350}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.21, y: -2.64, z: -0.45707682}
+  m_LocalPosition: {x: -6.21, y: -2.64, z: 0}
   m_LocalScale: {x: 0.9358984, y: 0.958618, z: 1}
   m_Children:
   - {fileID: 615613173}
@@ -4441,7 +4441,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905453008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.0387654, y: -0.14977354, z: -0.68525565}
+  m_LocalPosition: {x: -3.0387654, y: -0.14977354, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 620083762}
@@ -6673,7 +6673,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.5705409, y: -0.00000023841858}
+  m_Offset: {x: -0.04553795, y: -0.12353325}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -6684,7 +6684,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.751006, y: 6.5227904}
+  m_Size: {x: 7.983162, y: 6.7698565}
   m_EdgeRadius: 0
 --- !u!50 &1203839833
 Rigidbody2D:
@@ -7124,6 +7124,20 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 711dd59baa2c4724686ebc594df9c8db, type: 3}
     volume: 1
     pitch: 2.12
+    Loop: 0
+    PlayOnAwake: 0
+    AudioSource: {fileID: 0}
+  - Name: ObjectInteractable
+    clip: {fileID: 8300000, guid: 8b1efbb9edd7dbb46a79af21f5a3fbdb, type: 3}
+    volume: 1
+    pitch: 1.84
+    Loop: 0
+    PlayOnAwake: 0
+    AudioSource: {fileID: 0}
+  - Name: GotEm
+    clip: {fileID: 8300000, guid: b51c85652308e604b9995eb4d72bc0f1, type: 3}
+    volume: 1
+    pitch: 1.84
     Loop: 0
     PlayOnAwake: 0
     AudioSource: {fileID: 0}
@@ -9097,7 +9111,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.5705409, y: -0.00000023841858}
+  m_Offset: {x: -0.465971, y: -0.58829165}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9108,7 +9122,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.751006, y: 6.5227904}
+  m_Size: {x: 9.272253, y: 8.819927}
   m_EdgeRadius: 0
 --- !u!50 &1634331347
 Rigidbody2D:
@@ -9745,7 +9759,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 278, y: 113}
+  m_AnchoredPosition: {x: 278, y: 5}
   m_SizeDelta: {x: 547.536, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1742770267
@@ -10871,7 +10885,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.13980436, y: -0.360034}
+  m_Offset: {x: -0.2636795, y: -0.5490718}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -10882,7 +10896,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 8.621558, y: 6.7688837}
+  m_Size: {x: 8.869308, y: 7.6541586}
   m_EdgeRadius: 0
 --- !u!212 &1987857008
 SpriteRenderer:
