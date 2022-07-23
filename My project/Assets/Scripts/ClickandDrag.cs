@@ -13,21 +13,21 @@ public class ClickandDrag : MonoBehaviour
     {
         //Sound for object interactable
         FindObjectOfType<MusicManager>().Play("ObjectInteractable");
-        if (gameObject.name != "Enter")
-        {
+        /*if (gameObject.name != "Enter")
+        {*/
             mZCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
 
             //mOffset = gameObject world pos - OnMouseDown world pos
             mOffset = gameObject.transform.position - GetMouseWorldPos();
-        }
+        //}
     }
 
     private void OnMouseDrag()
     {
-        if (gameObject.name != "Enter")
-        {
+        /*if (gameObject.name != "Enter")
+        {*/
             transform.position = GetMouseWorldPos() + mOffset;
-        }
+        //}
     }
 
     private Vector3 GetMouseWorldPos()

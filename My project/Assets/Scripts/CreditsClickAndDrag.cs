@@ -13,14 +13,18 @@ public class CreditsClickAndDrag : MonoBehaviour
     public GameObject item;
     public bool goalPosFound;
     public GameObject snappingPos;
+    public BoxCollider2D EnterKeyBC;
 
     public Text L_Text, A_Text, S1_Text, S2_Text, O_Text;
-    public GameObject EnterKey, Hint, VinylDisk;
+    public GameObject EnterKey, Hint, VinylDisk/*, Halo, StringLights, Paperclip*/;
+    //public bool canMakeLasso, gotHalo, gotpaperclip, gotStringLights;
+    public GameObject WifiMonitor, BlankMonitor;
 
     // Start is called before the first frame update
     void Start()
     {
         rb = gameObject.GetComponent<Rigidbody2D>();
+        EnterKeyBC = EnterKey.GetComponent < BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -30,6 +34,11 @@ public class CreditsClickAndDrag : MonoBehaviour
         if (goalPosFound == true)
         {
             this.gameObject.transform.position = snappingPos.transform.position;
+        }
+        if (gameObject.name == "Wifi" && goalPosFound == true)
+        {
+            WifiMonitor.SetActive(false);
+            BlankMonitor.SetActive(true);
         }
 
         if (gameObject.name == "L" && goalPosFound == true)
@@ -58,9 +67,17 @@ public class CreditsClickAndDrag : MonoBehaviour
             if (gameObject.name == "Wifi" && goalPosFound == true)
             {
                 EnterKey.SetActive(true);
-                Hint.SetActive(true);
+                
             }  
         }
+        /*if (gotHalo == true && gotpaperclip == true && gotStringLights == true)
+        {
+            Halo.SetActive(false);
+            Paperclip.SetActive(false);
+            StringLights.SetActive(false);
+            canMakeLasso = true;
+        }*/
+
     }
 
     private void OnMouseDown()
@@ -69,6 +86,8 @@ public class CreditsClickAndDrag : MonoBehaviour
         {
             Debug.Log("It works");
             //Set active the hint
+            Hint.SetActive(true);
+            EnterKeyBC.enabled = false;
         }
         else
         {
@@ -86,14 +105,26 @@ public class CreditsClickAndDrag : MonoBehaviour
         gameObject.layer = 6;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        rb.bodyType = RigidbodyType2D.Kinematic;
-        Debug.Log("They Collided");
+        //rb.bodyType = RigidbodyType2D.Kinematic;
+        //Debug.Log("They Collided");
 
         /*if (gameObject.name == "String Lights" && collision.gameObject.name == "Vinyl Disk")
         {
             VinylDisk.SetActive(false);
+        }*/
+        /*if (other.gameObject.name == "Halo")
+        {
+            gotHalo = true;
+        }
+        if (other.gameObject.name == "String Lights")
+        {
+            gotStringLights = true;
+        }
+        if (other.gameObject.name == "Paperclip")
+        {
+            gotpaperclip = true;
         }*/
     }
 
@@ -114,10 +145,22 @@ public class CreditsClickAndDrag : MonoBehaviour
             gameObject.transform.parent = theCamera.transform;
             gameObject.layer = 0;
         }
-        else if (gameObject.name == "String Lights")
+        /*else if (gameObject.name == "String Lights")
         {
             rb.bodyType = RigidbodyType2D.Static;
+        }*/
+
+        if (gameObject.name == "Lasso" && collision.gameObject.name == "Headphone")
+        {
+            StartCoroutine(Lasso());
         }
-           
     }
+
+    IEnumerator Lasso()
+    {
+
+        yield return new WaitForSeconds(2f);
+        SceneManager.LoadScene("FinalScene");
+    }
+
 }
