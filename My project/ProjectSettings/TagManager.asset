@@ -9,6 +9,7 @@ TagManager:
   - music
   - Trash
   - Cassette2
+  - Interactable
   layers:
   - Default
   - TransparentFX
