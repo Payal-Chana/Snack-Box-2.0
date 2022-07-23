@@ -1104,7 +1104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FoundCounter: 0
-  finalNumberOfObjectsFound: 28
+  finalNumberOfObjectsFound: 1
   StarPanel: {fileID: 2038830641}
 --- !u!1 &367789906
 GameObject:
@@ -7134,6 +7134,13 @@ MonoBehaviour:
     Loop: 0
     PlayOnAwake: 0
     AudioSource: {fileID: 0}
+  - Name: GotEm
+    clip: {fileID: 8300000, guid: b51c85652308e604b9995eb4d72bc0f1, type: 3}
+    volume: 1
+    pitch: 1.84
+    Loop: 0
+    PlayOnAwake: 0
+    AudioSource: {fileID: 0}
 --- !u!4 &1271754914
 Transform:
   m_ObjectHideFlags: 0
@@ -9752,7 +9759,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 278, y: 113}
+  m_AnchoredPosition: {x: 278, y: 5}
   m_SizeDelta: {x: 547.536, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1742770267

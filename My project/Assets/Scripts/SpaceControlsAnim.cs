@@ -1,9 +1,8 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MouseControls : MonoBehaviour
+public class SpaceControlsAnim : MonoBehaviour
 {
     public Animator anim;
 
@@ -15,9 +14,9 @@ public class MouseControls : MonoBehaviour
 
     IEnumerator waitForSecondsMate()
     {
-        yield return new WaitForSeconds(4f);
-        anim.SetBool("isMouseAnimPlaying", true);
-        yield return new WaitForSeconds(6f);
-        anim.SetBool("isMouseAnimPlaying", false);
+        yield return new WaitForSeconds(8f);
+        anim.SetBool("isSpaceAnimPlaying", true);
+        yield return new WaitForSeconds(10f);
+        anim.SetBool("isSpaceAnimPlaying", false);
     }
 }

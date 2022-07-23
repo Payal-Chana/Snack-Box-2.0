@@ -158,8 +158,8 @@ public class CreditsClickAndDrag : MonoBehaviour
 
     IEnumerator Lasso()
     {
-
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(4f);
+       
         SceneManager.LoadScene("FinalScene");
     }
 

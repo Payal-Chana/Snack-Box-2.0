@@ -1261,6 +1261,13 @@ MonoBehaviour:
     Loop: 0
     PlayOnAwake: 0
     AudioSource: {fileID: 0}
+  - Name: GotEm
+    clip: {fileID: 8300000, guid: b51c85652308e604b9995eb4d72bc0f1, type: 3}
+    volume: 1
+    pitch: 0.61
+    Loop: 0
+    PlayOnAwake: 0
+    AudioSource: {fileID: 0}
 --- !u!4 &1082403319
 Transform:
   m_ObjectHideFlags: 0

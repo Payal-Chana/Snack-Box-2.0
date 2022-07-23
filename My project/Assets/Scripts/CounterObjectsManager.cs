@@ -9,11 +9,14 @@ public class CounterObjectsManager : MonoBehaviour
     public int finalNumberOfObjectsFound;
     public GameObject StarPanel;
 
+
+    
     private void Update()
     {
         if (FoundCounter >= finalNumberOfObjectsFound)
         {
             StartCoroutine("starPanel");
+            
         }
     }
     
@@ -21,7 +24,8 @@ public class CounterObjectsManager : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         StarPanel.SetActive(true);
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(8);
         //SceneManager.LoadScene("Credits");
+        
     }
 }
