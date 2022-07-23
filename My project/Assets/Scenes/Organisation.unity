@@ -1062,7 +1062,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 353445571}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.0387654, y: -0.14977354, z: -0.68525565}
+  m_LocalPosition: {x: -3.0387654, y: -0.14977354, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1024892859}
@@ -3291,7 +3291,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 640283352}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.0387654, y: -0.14977354, z: -0.68525565}
+  m_LocalPosition: {x: -3.0387654, y: -0.14977354, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 538104447}
@@ -3492,7 +3492,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 722355752}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.9771733, y: -3.384671, z: -2.9187372}
+  m_LocalPosition: {x: -5.9771733, y: -3.384671, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 408519985}
@@ -3752,7 +3752,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 744527350}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.21, y: -2.64, z: -0.45707682}
+  m_LocalPosition: {x: -6.21, y: -2.64, z: 0}
   m_LocalScale: {x: 0.9358984, y: 0.958618, z: 1}
   m_Children:
   - {fileID: 615613173}
@@ -4441,7 +4441,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 905453008}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.0387654, y: -0.14977354, z: -0.68525565}
+  m_LocalPosition: {x: -3.0387654, y: -0.14977354, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 620083762}
@@ -7124,6 +7124,13 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 711dd59baa2c4724686ebc594df9c8db, type: 3}
     volume: 1
     pitch: 2.12
+    Loop: 0
+    PlayOnAwake: 0
+    AudioSource: {fileID: 0}
+  - Name: ObjectInteractable
+    clip: {fileID: 8300000, guid: 8b1efbb9edd7dbb46a79af21f5a3fbdb, type: 3}
+    volume: 1
+    pitch: 1.84
     Loop: 0
     PlayOnAwake: 0
     AudioSource: {fileID: 0}
