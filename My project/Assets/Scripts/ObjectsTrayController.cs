@@ -11,13 +11,9 @@ public class ObjectsTrayController : MonoBehaviour
     public bool trayPosFound;
     public GameObject trayRightPos;
     public BoxCollider2D collider;
-
-    private void Start()
-    {
-        //trashAnim.SetBool("inPlace", false);
-
-    }
-
+    
+    public CounterObjectsManager counter;
+    
     private void Update()
     {
         if (trayPosFound == true)
@@ -25,7 +21,6 @@ public class ObjectsTrayController : MonoBehaviour
             this.gameObject.transform.position = trayRightPos.transform.position;
             collider.enabled = false;
         }
-        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -36,6 +31,9 @@ public class ObjectsTrayController : MonoBehaviour
             trayPosFound = true;
             //Sound for object placed down
             FindObjectOfType<MusicManager>().Play("ObjectPlacedDown");
+            
+            counter.FoundCounter++;
         }
     }
+    
 }

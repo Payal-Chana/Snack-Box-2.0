@@ -283,6 +283,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trashAnim: {fileID: 538104450}
   newPos: {fileID: 1334232291}
+  counter: {fileID: 353445573}
 --- !u!1 &28572011
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,6 +335,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1668558899}
   collider: {fileID: 28572016}
+  counter: {fileID: 353445573}
 --- !u!114 &28572014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,6 +498,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1375995907}
   collider: {fileID: 173764199}
+  counter: {fileID: 353445573}
 --- !u!114 &173764197
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -922,6 +925,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 367789906}
   collider: {fileID: 283881352}
+  counter: {fileID: 353445573}
 --- !u!114 &283881350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1042,6 +1046,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 353445572}
+  - component: {fileID: 353445573}
   m_Layer: 0
   m_Name: Objects
   m_TagString: Untagged
@@ -1086,6 +1091,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &353445573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 353445571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c09eda438facf2a4da817dbdf04c6acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FoundCounter: 0
+  finalNumberOfObjectsFound: 28
+  StarPanel: {fileID: 2038830641}
 --- !u!1 &367789906
 GameObject:
   m_ObjectHideFlags: 0
@@ -1866,6 +1886,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 283337294}
   collider: {fileID: 477410756}
+  counter: {fileID: 353445573}
 --- !u!114 &477410754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2131,6 +2152,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1604665954}
   collider: {fileID: 510666583}
+  counter: {fileID: 353445573}
 --- !u!114 &510666581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2577,6 +2599,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1666978226}
   collider: {fileID: 568887161}
+  counter: {fileID: 353445573}
 --- !u!114 &568887159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2846,6 +2869,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1371083300}
   collider: {fileID: 473297006}
+  counter: {fileID: 353445573}
 --- !u!114 &590047208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3332,6 +3356,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1740996064}
   collider: {fileID: 692688954}
+  counter: {fileID: 353445573}
 --- !u!114 &692688952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3789,6 +3814,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1233425024}
   collider: {fileID: 765339228}
+  counter: {fileID: 353445573}
 --- !u!114 &765339226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4882,7 +4908,6 @@ GameObject:
   - component: {fileID: 1024892856}
   - component: {fileID: 1024892860}
   - component: {fileID: 1024892861}
-  - component: {fileID: 1024892862}
   m_Layer: 0
   m_Name: Glasses
   m_TagString: Untagged
@@ -5022,7 +5047,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1024892855}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e70f06b2c2baeff45805c045f197645d, type: 3}
   m_Name: 
@@ -5031,25 +5056,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 620083758}
   collider: {fileID: 1024892857}
---- !u!114 &1024892862
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1024892855}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b1bc286275159940af8bf9cbff02639, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FoundCounter: 0
-  finalNumberOfObjectsFound: 1
-  StarPanel: {fileID: 2038830641}
-  Object: {fileID: 1024892855}
-  trayPosFound: 0
-  trayRightPos: {fileID: 620083758}
-  collider: {fileID: 1024892857}
+  counter: {fileID: 353445573}
 --- !u!1 &1033950730
 GameObject:
   m_ObjectHideFlags: 0
@@ -5448,6 +5455,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 555776764}
   collider: {fileID: 1055995730}
+  counter: {fileID: 353445573}
 --- !u!114 &1055995728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5874,6 +5882,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1037088201}
   collider: {fileID: 1084036939}
+  counter: {fileID: 353445573}
 --- !u!114 &1084036937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6145,6 +6154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trashAnim: {fileID: 538104450}
   newPos: {fileID: 1334232291}
+  counter: {fileID: 353445573}
 --- !u!1 &1163253744
 GameObject:
   m_ObjectHideFlags: 0
@@ -6196,6 +6206,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1944018574}
   collider: {fileID: 1163253749}
+  counter: {fileID: 353445573}
 --- !u!114 &1163253747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6490,6 +6501,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 969683596}
   collider: {fileID: 1187618241}
+  counter: {fileID: 353445573}
 --- !u!114 &1187618239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6761,6 +6773,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trashAnim: {fileID: 538104450}
   newPos: {fileID: 1334232291}
+  counter: {fileID: 353445573}
 --- !u!1 &1233425024
 GameObject:
   m_ObjectHideFlags: 0
@@ -6944,6 +6957,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 795802318}
   collider: {fileID: 1238146850}
+  counter: {fileID: 353445573}
 --- !u!114 &1238146848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7462,6 +7476,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 970356572}
   collider: {fileID: 449024913}
+  counter: {fileID: 353445573}
 --- !u!1 &1326806306
 GameObject:
   m_ObjectHideFlags: 0
@@ -7513,6 +7528,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1941182820}
   collider: {fileID: 1326806311}
+  counter: {fileID: 353445573}
 --- !u!114 &1326806309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7672,6 +7688,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trashAnim: {fileID: 538104450}
   newPos: {fileID: 0}
+  counter: {fileID: 0}
 --- !u!114 &1334232294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7861,6 +7878,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1063313126}
   collider: {fileID: 1368674215}
+  counter: {fileID: 353445573}
 --- !u!114 &1368674213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8766,6 +8784,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trashAnim: {fileID: 538104450}
   newPos: {fileID: 1334232291}
+  counter: {fileID: 353445573}
 --- !u!1 &1567971514
 GameObject:
   m_ObjectHideFlags: 0
@@ -9171,6 +9190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trashAnim: {fileID: 538104450}
   newPos: {fileID: 1334232291}
+  counter: {fileID: 353445573}
 --- !u!1 &1638038662
 GameObject:
   m_ObjectHideFlags: 0
@@ -10022,6 +10042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trashAnim: {fileID: 538104450}
   newPos: {fileID: 1334232291}
+  counter: {fileID: 353445573}
 --- !u!1 &1919372845
 GameObject:
   m_ObjectHideFlags: 0
@@ -10073,6 +10094,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 838657694}
   collider: {fileID: 1919372850}
+  counter: {fileID: 353445573}
 --- !u!114 &1919372848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10631,6 +10653,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 736761771}
   collider: {fileID: 1973441213}
+  counter: {fileID: 353445573}
 --- !u!114 &1973441211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10794,6 +10817,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1393672273}
   collider: {fileID: 1987857007}
+  counter: {fileID: 353445573}
 --- !u!114 &1987857005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11115,6 +11139,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1932468094}
   collider: {fileID: 2114926098}
+  counter: {fileID: 353445573}
 --- !u!1 &2038830641
 GameObject:
   m_ObjectHideFlags: 0
@@ -11606,6 +11631,7 @@ MonoBehaviour:
   trayPosFound: 0
   trayRightPos: {fileID: 1172527155}
   collider: {fileID: 2122100671}
+  counter: {fileID: 353445573}
 --- !u!114 &2122100669
 MonoBehaviour:
   m_ObjectHideFlags: 0
